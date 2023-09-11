@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function Abc()
 {
@@ -14,8 +14,20 @@ export function Abcd()
 
 export function Xyz()
 {
-    return <p><h1>heading one</h1> <h2>sdfsdfhjsdhfjsdhfjh sjdhfjshd</h2></p>;
-    return <p><h1>heading one</h1> <h2>sdfsdfhjsdhfjsdhfjh sjdhfjshd</h2></p>;
-    
+    return <div><h1>heading one</h1> <h2>sdfsdfhjsdhfjsdhfjh sjdhfjshd</h2></div>;    
 }
+
+export function Contactus()
+{
+    const a=50;
+    return(
+        
+        <Fragment>
+        <h1>heading one</h1>
+        <h2 style={{color:'red',backgroundColor:'blue',fontSize:`${a}px`}}>heading two</h2>
+        <p className="head">this is paragraph</p>
+        </Fragment>
+    )
+}
+
 
