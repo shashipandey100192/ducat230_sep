@@ -20,12 +20,18 @@ export function Xyz()
 export function Contactus()
 {
     const a=50;
+    const b=null;
+    const first = "this is ducat india";
     return(
         
         <Fragment>
         <h1>heading one</h1>
         <h2 style={{color:'red',backgroundColor:'blue',fontSize:`${a}px`}}>heading two</h2>
         <p className="head">this is paragraph</p>
+        {first}
+        {50+80}
+        {b ? "ok" : "no"}
+
         </Fragment>
     )
 }
