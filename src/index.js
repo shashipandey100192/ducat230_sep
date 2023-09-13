@@ -8,10 +8,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import Mybs from './Mybs';
 import Myreactbs from './Myreactbs';
+import Uimetrial from './Uimetrial';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Uimetrial/>
     <Mybs/>
     <Myreactbs/>
     <Ducat></Ducat>
@@ -19,6 +21,7 @@ root.render(
     <Xyz></Xyz>
     <Contactus/>
     <Myclasscop/>
+    
     
   </React.StrictMode>
 );

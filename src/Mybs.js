@@ -1,4 +1,6 @@
 import React from 'react'
+import { AiFillChrome,AiFillFacebook } from "react-icons/ai";
+import { FcApproval,FcBiohazard } from "react-icons/fc";
 
 function Mybs() {
   return (
@@ -6,9 +8,16 @@ function Mybs() {
         <div className='row'>
             <div className='col-12'>
                 <h1 className='h1 bg-danger text-white'>use of bootstrap page</h1>
+              <h1>
+              <AiFillChrome/>
+              <FcApproval/>
+              <FcBiohazard/>
+              <AiFillFacebook/>
+              </h1>
+
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#"> <FcBiohazard/>Navbar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
