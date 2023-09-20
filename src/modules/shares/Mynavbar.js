@@ -23,6 +23,9 @@ function Mynavbar() {
                                     <li className="nav-item">
                                         <Link className="nav-link" to="mycontactus">Contact</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="mygraph">graph</Link>
+                                    </li>
                                     <li className="nav-item dropdown">
                                         <Link className="nav-link dropdown-toggle" to="pp" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Dropdown
