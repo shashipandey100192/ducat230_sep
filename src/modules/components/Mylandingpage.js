@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Mylandingpage() {
 
@@ -14,6 +14,16 @@ function Mylandingpage() {
         console.log(p.target.value);
         ccolor(p.target.value);
   }
+
+
+const a = ()=>{
+   console.log("this is onload function of javascript");
+}
+
+useEffect(()=>{
+  a();
+  
+})
 
 
   return (
