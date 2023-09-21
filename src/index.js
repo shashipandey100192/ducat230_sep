@@ -8,6 +8,7 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Mylandingpage from './modules/components/Mylandingpage';
 import Myaboutpage from './modules/components/Myaboutpage';
 import Errorpage from './modules/components/Errorpage';
+import Mycontactus from './modules/components/Mycontactus';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Mylandingpage/>}></Route>
         <Route path='myabout' element={<Myaboutpage/>}/>
+        <Route path='mycontactus' element={<Mycontactus/>}/>
         <Route path='*' element={<Errorpage/>}/>
 
       </Routes>
