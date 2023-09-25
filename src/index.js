@@ -9,6 +9,7 @@ import Mylandingpage from './modules/components/Mylandingpage';
 import Myaboutpage from './modules/components/Myaboutpage';
 import Errorpage from './modules/components/Errorpage';
 import Mycontactus from './modules/components/Mycontactus';
+import Myaxios from './modules/components/Myaxios';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
         <Route path='/' element={<Mylandingpage/>}></Route>
         <Route path='myabout' element={<Myaboutpage/>}/>
         <Route path='mycontactus' element={<Mycontactus/>}/>
+        <Route path='myaxiosdata' element={<Myaxios/>}/>
         <Route path='*' element={<Errorpage/>}/>
 
       </Routes>
