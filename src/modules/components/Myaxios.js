@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Myaxios() {
     const [svariale, sfunc]=useState([])
@@ -8,9 +9,12 @@ function Myaxios() {
         axios.get('https://jsonplaceholder.typicode.com/todos').then((d)=>{
             console.log(d.data);
             sfunc(d.data);
-
         })
     }
+
+    useEffect(()=>{
+      myapi();
+    },[])
 
 
   return (
@@ -21,15 +25,16 @@ function Myaxios() {
                 
                     {svariale.map((d)=>{
                         return(
-                            <div className='col-md-3'>
+                          <div className='col-md-3' key={d.id}>
                             <div className="card">
-                            <div className="card-body">
-                                 <h2 className="card-title">{d.id}</h2>
-                              <h5 className="card-title">{d.title}</h5>
-                              <p className="card-text">{d.userId}</p>
-                              <a href="#" className="btn btn-primary">{d.completed===true ? "Yes" :"No"}</a>
+                              <div className="card-body">
+                                <h2 className="card-title">{d.id}</h2>
+                                <h5 className="card-title">{d.title}</h5>
+                                <p className="card-text">{d.userId}</p>
+                                <a href="#" className="btn btn-primary">{d.completed === true ? "Yes" : "No"}</a>
+                                <Link to={`details/`+d.id}>View Details</Link>
+                              </div>
                             </div>
-                          </div> 
                           </div>
 
                         )

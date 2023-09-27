@@ -29,3 +29,52 @@ export const mydata =[
 },
 
 ];
+
+
+
+
+export const Mychart = [
+    {
+      name: "web",
+      maxv: 4000,
+      minv: 2400,
+      currentv: 3000
+    },
+    {
+      name: "php",
+      maxv: 3000,
+      minv: 1398,
+      currentv: 2210
+    },
+    {
+      name: "py",
+      maxv: 2000,
+      minv: 9800,
+      currentv: 2290
+    },
+    {
+      name: "java",
+      maxv: 2780,
+      minv: 3908,
+      currentv: 2000
+    },
+    {
+      name: "c++",
+      maxv: 1890,
+      minv: 4800,
+      currentv: 2181
+    },
+    {
+      name: "c",
+      maxv: 2390,
+      minv: 3800,
+      currentv: 2500
+    },
+    {
+      name: "react",
+      maxv: 3490,
+      minv: 4300,
+      currentv: 2100
+    }
+  ];
+  
