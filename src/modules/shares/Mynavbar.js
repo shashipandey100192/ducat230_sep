@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Mynavbar() {
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid shadow fixed-top'>
             <div className='row'>
                 <div className='col-12'>
                     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -36,7 +36,7 @@ function Mynavbar() {
                                         <ul className="dropdown-menu">
                                             <li><Link className="dropdown-item" to="pp">Action</Link></li>
                                             <li><Link className="dropdown-item" to="pp">Another action</Link></li>
-                                            <li><hr className="dropdown-divider"/></li>
+                                            <li><hr className="dropdown-divider" /></li>
                                             <li><Link className="dropdown-item" to="pp">Something else here</Link></li>
                                         </ul>
                                     </li>
@@ -44,9 +44,18 @@ function Mynavbar() {
                                         <Link className="nav-link disabled" aria-disabled="true">Disabled</Link>
                                     </li>
                                 </ul>
-                                <form className="d-flex" role="search">
-                                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                        <button className="btn btn-outline-success" type="submit">Search</button>
+                                <form className="d-flex me-5" role="search">
+                                    <div className="dropdown me-3">
+                                        <a href="#" className="d-flex align-items-center text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2" />
+                                            <strong>username</strong>
+                                        </a>
+                                        <ul className="dropdown-menu dropdown-menu-light text-small shadow" data-popper-placement="top-start" >
+                                            <li><a className="dropdown-item" href="#">Login</a></li>
+                                            <li><Link className="dropdown-item" to="registor">Registor</Link></li>
+                                            <li><Link className="dropdown-item" to="/">Sign out</Link></li>
+                                        </ul>
+                                    </div>
                                 </form>
                             </div>
                         </div>

@@ -12,6 +12,7 @@ import Mycontactus from './modules/components/Mycontactus';
 import Myaxios from './modules/components/Myaxios';
 import Mygraphpage from './modules/components/Mygraphpage';
 import ProductDetails from './modules/components/ProductDetails';
+import Myregistorpage from './modules/auth/Myregistorpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,7 @@ root.render(
         <Route path='myaxiosdata' element={<Myaxios/>}/>
         <Route path='mygraph' element={<Mygraphpage/>}/>
         <Route path='myaxiosdata/details/:id' element={<ProductDetails/>}/>
+        <Route path='registor' element={<Myregistorpage/>}/>
         <Route path='*' element={<Errorpage/>}/>
 
       </Routes>

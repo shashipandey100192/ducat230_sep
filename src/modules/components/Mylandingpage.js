@@ -4,8 +4,8 @@ function Mylandingpage() {
 
 
   return (
-    <div>
-        
+    <div className='container page'>
+        <h1>this is welcome page / Home page</h1>
       
       </div>
   )
