@@ -13,6 +13,9 @@ import Myaxios from './modules/components/Myaxios';
 import Mygraphpage from './modules/components/Mygraphpage';
 import ProductDetails from './modules/components/ProductDetails';
 import Myregistorpage from './modules/auth/Myregistorpage';
+import Myservicepage from './modules/components/Myservicepage';
+import Buymobilepage from './modules/components/subrouting/Buymobilepage';
+import Repairmobilepage from './modules/components/subrouting/Repairmobilepage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +31,11 @@ root.render(
         <Route path='mygraph' element={<Mygraphpage/>}/>
         <Route path='myaxiosdata/details/:id' element={<ProductDetails/>}/>
         <Route path='registor' element={<Myregistorpage/>}/>
+        <Route path='myservice' element={<Myservicepage/>}>
+            <Route path='buymobile' element={<Buymobilepage/>}/>
+            <Route path='repair' element={<Repairmobilepage/>}/>
+
+        </Route>
         <Route path='*' element={<Errorpage/>}/>
 
       </Routes>

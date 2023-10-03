@@ -25,8 +25,8 @@ function Myaxios() {
                 
                     {svariale.map((d)=>{
                         return(
-                          <div className='col-md-3' key={d.id}>
-                            <div className="card">
+                          <div className='col-md-3 border' key={d.id}>
+                            <div className=" m-2">
                               <div className="card-body">
                                 <h2 className="card-title">{d.id}</h2>
                                 <h5 className="card-title">{d.title}</h5>

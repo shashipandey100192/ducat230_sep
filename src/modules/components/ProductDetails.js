@@ -19,13 +19,15 @@ useEffect(()=>{
 },[])
 
   return (
-    <div>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-12'>
         <h1>ProductDetails</h1>
         <h2>{singledata.id}</h2>
         <h2>{singledata.title}</h2>
-
-
-
+        <h2>{singledata.userId}</h2>
+        </div>
+      </div>
     </div>
   )
 }
