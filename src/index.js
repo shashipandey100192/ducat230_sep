@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense,lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
@@ -17,6 +17,8 @@ import Myservicepage from './modules/components/Myservicepage';
 import Buymobilepage from './modules/components/subrouting/Buymobilepage';
 import Repairmobilepage from './modules/components/subrouting/Repairmobilepage';
 
+const Mylazym = lazy(()=>import('./modules/components/Lazyloadingpage'));
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,8 +36,18 @@ root.render(
         <Route path='myservice' element={<Myservicepage/>}>
             <Route path='buymobile' element={<Buymobilepage/>}/>
             <Route path='repair' element={<Repairmobilepage/>}/>
+            <Route path='*' element={<Errorpage/>}/>
+        </Route>
+        <Route path='lazyloading' element={
+          <Suspense fallback={<h1 style={{color:'red',backgroundColor:'blue',textAlign:'center',position:'absolute',top:'300px'}}>Loading</h1>}>
+            <Mylazym/>
+          </Suspense>
+        }>
+            
+
 
         </Route>
+
         <Route path='*' element={<Errorpage/>}/>
 
       </Routes>

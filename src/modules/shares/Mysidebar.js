@@ -16,7 +16,7 @@ function Mysidebar() {
           <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><Link to="buymobile" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Buy</Link></li>
             <li><Link to="repair" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Repair</Link></li>
-            <li><Link to="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Replace</Link></li>
+            <li><Link to="replacepage" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Replace</Link></li>
           </ul>
         </div>
       </li>
