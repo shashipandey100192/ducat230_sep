@@ -1,12 +1,15 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
+const myarray = [];
 function Myregistorpage() {
     const { register, handleSubmit,formState: { errors } } = useForm();
 
+
 const mysubmmit = (alldata)=>{
     console.log(alldata);
-   
+    myarray.push(alldata);
+    localStorage.setItem("userdata",JSON.stringify(myarray));
 }
 
     return (
