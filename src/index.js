@@ -16,13 +16,24 @@ import Myregistorpage from './modules/auth/Myregistorpage';
 import Myservicepage from './modules/components/Myservicepage';
 import Buymobilepage from './modules/components/subrouting/Buymobilepage';
 import Repairmobilepage from './modules/components/subrouting/Repairmobilepage';
+import { Auth0Provider } from '@auth0/auth0-react';
+import { Provider } from 'react-redux';
+import { Mystore } from './modules/components/reduxprogram/Mystore';
+import Myreduxpage from './modules/components/reduxprogram/Myreduxpage';
 
 const Mylazym = lazy(()=>import('./modules/components/Lazyloadingpage'));
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode >
+    <Auth0Provider
+    domain="dev-2lztdozl12hbrfpe.us.auth0.com"
+    clientId="13WaPjGT3RDGZgyBY2d93k6tSYQoPeac"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
+      <Provider store={Mystore}>
     <BrowserRouter>
     <Mynavbar/>
       <Routes>
@@ -47,14 +58,15 @@ root.render(
 
 
         </Route>
-
+        <Route path='redux' element={<Myreduxpage/>}/>
         <Route path='*' element={<Errorpage/>}/>
 
       </Routes>
     
     
     </BrowserRouter>
-    
+    </Provider>
+    </Auth0Provider>
   </React.StrictMode>
 );
 

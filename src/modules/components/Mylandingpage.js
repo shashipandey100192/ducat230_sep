@@ -1,13 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Mylandingpage() {
   const getmydata = JSON.parse(localStorage.getItem('userdata'));
   console.log(getmydata);
+  const { loginWithRedirect } = useAuth0();
 
+  // useEffect(()=>{
+  //   loginWithRedirect();
+  // },[]);
 
   return (
     <div className='container page'>
         <h1>this is welcome page / Home page</h1>
+        <button onClick={() => loginWithRedirect()}>Log In</button>
         <table className="table table-bordered">
   <thead>
    

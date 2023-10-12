@@ -35,6 +35,10 @@ function Mynavbar() {
                                     <li className="nav-item">
                                         <Link className="nav-link" to="lazyloading">lazy</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="redux">redux</Link>
+                                    </li>
+                                    
                                     
                                     {/* <li className="nav-item dropdown">
                                         <Link className="nav-link dropdown-toggle" to="pp" role="button" data-bs-toggle="dropdown" aria-expanded="false">

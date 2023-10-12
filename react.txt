@@ -1,0 +1,202 @@
+react.js
+=========================
+1) install
+	1) node.js
+	2) git bash
+	3) git account create
+2) GUI vs CLI 
+--------------------------------------
+3) flag  ( short key) 
+4) npm ( node package manager) 
+5) node_modules
+6) what is modules?
+7) what is package ?
+8) inject / injection
+9) package.json   //  show list of packages installed
+10) react install
+	npx create-react-app appname
+11) code .    // open in vscode
+12) ctrl+c   //  stop server/ close server
+13) npm start // start server/ run server
+14) port  //address protocole
+15) default port : 3000
+------------------------------------------------------
+16) file type
+	1) .js
+	2) .jsx
+	3) .ts
+	4) .tsx
+	
+17) import /export
+	1) name import /export  {}
+	2) default export/import 
+NOte: function name and file name must have start from capital letter 
+Note: one file has one default function
+--------------------------------------------------------
+git
+===============
+1) git account login
+2) create repo 
+Note: project name and repo name must have same 
+3) git remote -v  // check connection
+4) git remote add origin <repo path>  // create connection
+5) git init // initialized
+6) git add --all  // add all file in git 
+7) git commit -m "type any message"
+8) git push origin <branch name>
+9) git clone <repo path>
+Note: after git clone you have to "npm install"
+	---------------
+	git add --all
+	git commit -m "sdkfks"
+	git pull origin master
+	------------------------
+
+----------------------------------------------------------
+18) react wrap element
+	1) html element
+	2) <></>
+	3) <Fragment>
+19) types of components
+	1) function
+	2) class 
+20) render vs re-render
+21) ui component
+	1) html/css (custom)
+	2) bootstrap
+	3) react-bootstrap
+	4) ui-metrial  
+22) {} expression  /  jsx
+------------------------------------------
+23) bootstrap
+	1) npm install bootstrap	// latest version install
+	2) npm uninstall bootstrap	// uninstall package
+	3) npm install bootstrap@4.0.0	// install current version 4.0.0 
+	4) import 
+24) react bootstrap
+ 	1) npm install react-bootstrap bootstrap
+---------------------------------------------------
+25 ) ui material
+	1) npm install @mui/material @emotion/react @emotion/styled    //simple
+	2) npm install @mui/material @mui/styled-engine-sc styled-components
+26) icon 
+	1) npm install react-icons --save
+	2) import 
+----------------------------------------------------
+27) image import type 
+	1) src(folder)
+	2) public
+	3) online(cdn)
+Note: alt attribute must
+Note: can't use ( photo, image, picture)
+Note:  replace
+	  href = to
+	   a   = Link
+	class = className
+28) react routing
+	1) npm install react-rouder-dom
+	2) import 
+----------------------------------------------
+29) useState()
+------------------------------------------
+30) useEffect()
+-------------------------------------------
+31) data binding/ data maping
+---------------------------------------------
+32) api network
+	1) axios
+		1) npm insall axios
+		2) import 
+	2) fetch
+33) http(object) transfar data
+	list of mathods
+	1) get()	
+	2) post()
+	3) put()
+	4) delete()
+	5) patch()
+34) status code/ response code
+	Informational responses (100 – 199)
+	Successful responses (200 – 299)
+	Redirection messages (300 – 399)
+	Client error responses (400 – 499)
+	Server error responses (500 – 599)
+---------------------------------------------------
+35) graph / chart
+	1) npm install recharts
+	2) import
+36) param  routing
+	useParam()
+-----------------------------------------------
+37) child routing/ modules routing
+	Outlet 
+-----------------------------------------------
+38) lazy loading
+	1) lazy()
+	2) import()
+	3) Suspance
+	4) fallback
+-------------------------------------------------
+39) form validation
+	1) react-hooks-form (lab)
+		1) npm install react-hook-form
+		2) import (useForm)
+	2) custom
+
+40) local storage
+---------------------------------------------------
+41) auth0
+	1) login auth0
+	2) create application
+	3) application config
+	4) npm install @auth0/auth0-react
+	5) wrap whole application with auth0provider
+	6) useAuth0 
+42) hosting( netlify)
+---------------------------------------------------
+43) redux
+	1) npm install @reduxjs/toolkit react-redux
+	2) create store and configureStore 
+	3) wrap whole application with provider 
+	4) create actions
+	5) import in store
+	6) use despach and import in ui
+	
+----------------------- 
+	1) what is redux ?
+	2) configureStore 
+	3) reducer
+	4) Provider
+	5) store
+	6) createSlice
+	7) useSelector
+	8) useDispatch
+	9) actions
+	10) state
+	
+	
+	
+	
+	
+
+
+
+	
+	
+
+	
+	
+	 
+
+	
+
+
+ 
+
+
+
+
+
+	
+	
+
